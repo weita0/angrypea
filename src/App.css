@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.all {
+  background-color: #f8f9f3;
+  height: 1189px;
+  width: 841px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  background-color: #fff;
+  margin-left: 24px;
+  margin-right: 24px;
+  border: 1px solid rgb(204, 206, 200);
+}
+
+.item {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.item-title {
+  font-size: 18.667px;
+  color: #949591;
+  font-weight: 400;
+  font-family: 'Hiragino Sans GB';
+}
+
+.item-content {
+
+}
+
+.item-content-each {
+  margin: 8px 0 8px 0;
+}
+
+.item-list {
+  margin-left: 24px;
+  padding-top: 5.3333px;
+}
+
+.list {
+  list-style: circle;
+}
+
+.main-title {
+  height: 120px;
+  margin-left: 24px;
+}
+
+.photo-area {
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgb(204, 206, 200);
+  border-radius: 100px;
+}
+
+.name-area {
+  font-size: 32px;
+  color: #85200c;
+  margin-top: 16px;
+}
+
+.self-desc {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+div.self-desc span {
+  padding-left: 8px;
+  padding-right: 8px;
+  /*border-right: 1px solid rgb(204, 206, 200);*/
+}
+
+.item-title-sub {
+  background-color: #e6e6e6;
+}
+
+.main-page-body {
+  height: 100%;
+}
