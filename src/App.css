@@ -103,3 +103,19 @@ div.self-desc span {
 .main-page-body {
   height: 100%;
 }
+
+.form-stepbar {
+  width: 66.67%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.form-body {
+  width: 66.67%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}

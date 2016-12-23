@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Row, Col, Timeline, Icon } from 'antd'
-import { Header } from '../components/Header'
 import 'antd/dist/antd.css'
 
 

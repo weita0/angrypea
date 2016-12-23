@@ -10,7 +10,7 @@ export default class Entry extends Component {
   render() {
     return (
       <Row className="main-page-body">
-        <MenuBar />
+        {this.props.children}
       </Row>
     )
   }
