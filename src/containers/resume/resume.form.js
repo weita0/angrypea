@@ -1,30 +1,26 @@
 import React, { Component } from 'react'
 
 import { Steps, Row } from 'antd'
-
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import BaseInfo from './resume.form.step1'
 import Details from './resume.form.step2'
+import * as actions from './actions'
 const Step = Steps.Step
 
-export default class Form extends Component {
+export class Form extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      current: 0
-    }
   }
   componentDidMount() {
-    // setInterval(() => {
-    //   this.setState({
-    //     current: this.state.current === 2 ? 0 : this.state.current + 1
-    //   })
-    // }, 1000)
+
   }
   render() {
+    let { current_step } = this.props.resume
     return (
       <Row>
         <Row className="form-stepbar">
-          <Steps current={this.state.current}>
+          <Steps current={current_step}>
             <Step title="BaseInfo" description="This is a description." />
             <Step title="Education" description="This is a description." />
             <Step title="Final" description="This is a description." />
@@ -32,13 +28,27 @@ export default class Form extends Component {
         </Row>
         <Row className="form-body">
         {
-          this.state.current === 0 && <BaseInfo />
+          current_step === 0 && <BaseInfo />
         }
         {
-          this.state.current === 1 && <Details />
+          current_step === 1 && <Details />
         }
         </Row>
       </Row>
     )
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    resume: state.resume
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Form)

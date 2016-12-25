@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from 'react'
 import { Row, Col, Icon, Menu, Switch } from 'antd'
 import _ from 'lodash'

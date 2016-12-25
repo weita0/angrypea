@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from 'react'
 
 import { Row, Col, Icon, Form, Input } from 'antd'
@@ -5,8 +6,8 @@ import { Row, Col, Icon, Form, Input } from 'antd'
 const FormItem = Form.Item
 
 const formItemLayout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
+  labelCol: { span: 5 },
+  wrapperCol: { span: 19 }
 }
 
 export class Details extends Component {
@@ -18,8 +19,17 @@ export class Details extends Component {
     return (
       <Form horizontal onSubmit={this.handleSubmit}>
         <FormItem
-          {...formItemLayout}
           label='Expected Salary'
+          hasFeedback
+        >
+        {
+          getFieldDecorator('salary', {
+            rules: []
+          })(<Input />)
+        }
+        </FormItem>
+        <FormItem
+          label=''
           hasFeedback
         >
         {
